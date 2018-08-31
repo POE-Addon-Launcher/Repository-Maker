@@ -10,6 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
+      <Button fx:id="bImportRepo" layoutX="9.0" layoutY="2.0" mnemonicParsing="false" onAction="#ImportRepo" text="Import Repo" />
       <Text fill="#2b91af" layoutX="78.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Addon">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -21,6 +22,7 @@
          </font>
       </Text>
       <TextField fx:id="DISPLAY_NAME" layoutX="131.0" layoutY="44.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="bLOAD" layoutX="293.0" layoutY="44.0" mnemonicParsing="false" onAction="#loadByName" text="Load" />
       <Text fill="#2b91af" layoutX="31.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DISPLAY_NAME">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -38,19 +40,16 @@
       </Text>
       <TextField fx:id="VERSION" layoutX="131.0" layoutY="79.0" prefHeight="25.0" prefWidth="50.0" />
       <TextField fx:id="CREATORS" layoutX="132.0" layoutY="111.0" prefHeight="25.0" prefWidth="100.0" />
-      <TextField fx:id="PROGRAMMING_LANGUAGE" layoutX="58.0" layoutY="554.0" prefHeight="25.0" prefWidth="75.0" />
       <Text fill="#2b91af" layoutX="17.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROGRAMMING_LANGUAGE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="POE_VERSION" layoutX="248.0" layoutY="554.0" prefHeight="25.0" prefWidth="75.0" />
       <Text fill="#2b91af" layoutX="246.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POE_VERSION">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Button fx:id="bFilter" layoutX="207.0" layoutY="586.0" mnemonicParsing="false" onAction="#AddFilter" text="Add Filter to Repo File" />
       <Text fill="#2b91af" layoutX="123.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Addon Specific Info">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -61,7 +60,6 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="LAUNCH_LOCATION" alignment="CENTER" layoutX="14.0" layoutY="474.0" prefHeight="25.0" prefWidth="334.0" text="Addons/%d/%v/&lt;your.exe/jar/ahk/etc&gt;" />
       <Text fill="#2b91af" layoutX="136.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GitHub info:">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -85,15 +83,12 @@
          </font>
       </Text>
       <TextField fx:id="DOWNLOAD_URL" alignment="CENTER" layoutX="14.0" layoutY="249.0" prefHeight="25.0" prefWidth="334.0" />
-      <Button fx:id="bAddon" layoutX="19.0" layoutY="586.0" mnemonicParsing="false" onAction="#AddAddon" text="Add Adon to Repo File" />
-      <Button fx:id="bSaveRepo" layoutX="255.0" layoutY="2.0" mnemonicParsing="false" onAction="#SaveRepo" text="Save Repo File" />
       <Line endX="250.0" layoutX="105.0" layoutY="35.0" startX="-106.0" />
       <Text fx:id="txtCount" fill="#2b91af" layoutX="90.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Addons: %a | Filters: %f" textAlignment="CENTER" wrappingWidth="157.13671875">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Text>
-      <Button fx:id="bImportRepo" layoutX="9.0" layoutY="2.0" mnemonicParsing="false" onAction="#ImportRepo" text="Import Repo" />
       <Text fill="#2b91af" layoutX="156.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Icon URL">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -111,6 +106,11 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Button fx:id="bLOAD" layoutX="293.0" layoutY="44.0" mnemonicParsing="false" onAction="#loadByName" text="Load" />
+      <TextField fx:id="LAUNCH_LOCATION" alignment="CENTER" layoutX="14.0" layoutY="474.0" prefHeight="25.0" prefWidth="334.0" text="Addons/%d/%v/&lt;your.exe/jar/ahk/etc&gt;" />
+      <TextField fx:id="PROGRAMMING_LANGUAGE" layoutX="58.0" layoutY="554.0" prefHeight="25.0" prefWidth="75.0" />
+      <TextField fx:id="POE_VERSION" layoutX="248.0" layoutY="554.0" prefHeight="25.0" prefWidth="75.0" />
+      <Button fx:id="bAddon" layoutX="19.0" layoutY="586.0" mnemonicParsing="false" onAction="#AddAddon" text="Add Adon to Repo File" />
+      <Button fx:id="bFilter" layoutX="207.0" layoutY="586.0" mnemonicParsing="false" onAction="#AddFilter" text="Add Filter to Repo File" />
+      <Button fx:id="bSaveRepo" layoutX="255.0" layoutY="2.0" mnemonicParsing="false" onAction="#SaveRepo" text="Save Repo File" />
    </children>
 </AnchorPane>
